@@ -2,6 +2,7 @@ package utils
 
 import (
 	"bufio"
+	"fmt"
 	"log"
 	"os"
 )
@@ -28,6 +29,7 @@ func GetAllInputLines(filepath string) ([]string, error) {
 	var inputLines []string
 
 	err := ProcessInput(filepath, func(line string) error {
+		fmt.Println(line)
 		inputLines = append(inputLines, line)
 		return nil
 	})
