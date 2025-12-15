@@ -45,3 +45,14 @@ func Debug(prefix string, printable any) {
 		fmt.Println(printable)
 	}
 }
+
+const (
+	AnsiColorReset   = "\033[0m"
+	AnsiColorRed     = "\033[31m"
+	AnsiColorGreen   = "\033[32m"
+	AnsiColorYellow  = "\033[33m"
+	AnsiColorBlue    = "\033[34m"
+	AnsiColorMagenta = "\033[35m"
+	AnsiColorCyan    = "\033[36m"
+	AnsiColorWhite   = "\033[37m"
+)
