@@ -38,12 +38,13 @@ func GetAllInputLines(filepath string) ([]string, error) {
 }
 
 func Debug(prefix string, printable any) {
-	if os.Getenv("DEBUG") == "TRUE" {
-		println("**************************")
-		println(prefix)
-		println("--------------------------")
-		fmt.Println(printable)
-	}
+	//if os.Getenv("DEBUG") == "TRUE" {
+	println("**************************")
+	println(prefix)
+	println("--------------------------")
+	fmt.Println(printable)
+	println("--------------------------")
+	//}
 }
 
 const (
